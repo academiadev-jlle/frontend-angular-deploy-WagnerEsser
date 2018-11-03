@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 
 export class PetListItemComponent {
+    @Input() id: string;
     @Input() name: string;
     @Input() description: string;
 }
