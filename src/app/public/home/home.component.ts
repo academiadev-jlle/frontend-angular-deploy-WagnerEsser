@@ -25,7 +25,10 @@ export class HomeComponent implements OnInit {
       description: 'Tô com fome'
     }
   ];
+  adoptedPets: PetOptions[] = []
   constructor() { }
+
+  counter = 0;
 
   ngOnInit() {
   }
