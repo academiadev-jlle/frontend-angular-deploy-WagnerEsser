@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { PetListItemComponent } from './pet-list-item/pet-list-item.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { PetListItemComponent } from './pet-list-item/pet-list-item.component';
 import { PetDetailComponent } from './pet-detail/pet-detail.component';
 
 @NgModule({
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
     declarations: [
         PetListItemComponent,
         HeaderComponent,
@@ -14,10 +21,9 @@ import { PetDetailComponent } from './pet-detail/pet-detail.component';
     exports: [
         PetListItemComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        PetDetailComponent
     ]
 })
 
-export class SharedModule {
-
-}
+export class SharedModule { }
